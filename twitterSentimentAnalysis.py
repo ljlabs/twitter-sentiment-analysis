@@ -11,7 +11,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-query = 'trump'
+query = 'Python'
 max_tweets = 100
 public_tweets = [status for status in tweepy.Cursor(api.search, q=query).items(max_tweets)]
 
